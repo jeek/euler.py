@@ -9,7 +9,8 @@ if __name__ == "__main__":
                      problems.problem002,
                      problems.problem003,
                      problems.problem004,
-                     problems.problem005]
+                     problems.problem005,
+                     problems.problem006]
     for problemNO in FUNCTION_LIST:
         Process(target=problemNO, args=(ANSWERS,)).start()
         COUNT += 1

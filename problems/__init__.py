@@ -4,3 +4,4 @@ from problem002 import problem002
 from problem003 import problem003
 from problem004 import problem004
 from problem005 import problem005
+from problem006 import problem006
