@@ -1,6 +1,6 @@
 """Solve Project Euler problems in python."""
 from multiprocessing import Queue, Process
-from problems import *
+from problems import problem001, problem002, problem003, problem004, problem005
 
 if __name__ == "__main__":
     ANSWERS = Queue()
