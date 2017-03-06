@@ -1,11 +1,17 @@
 """Solve Project Euler problems in python."""
 from multiprocessing import Queue, Process
-from problems import problem001, problem002, problem003, problem004, problem005
+import problems
 
 if __name__ == "__main__":
     ANSWERS = Queue()
     COUNT = 0
-    for problemNO in [problem001, problem002, problem003, problem004, problem005]:
+    for problemNO in [
+        problems.problem001,
+        problems.problem002,
+        problems.problem003,
+        problems.problem004,
+        problems.problem005,
+        ]:
         Process(target=problemNO, args=(ANSWERS,)).start()
         COUNT += 1
     FINALANSWERS = dict()
