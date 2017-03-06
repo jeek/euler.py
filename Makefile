@@ -6,9 +6,9 @@ results.txt: euler.py
 check:	test
 
 test:	euler.py
-	python -m unittest -v fibonacci palindrome primes sumsteplist \
-	                      problem001 problem002 problem003 problem004 \
-	                      euler
+	python -m unittest -v euler
+	cd problems;make test
 
 clean:
-	rm -rf *~ *.pyc
+	rm -rf *~ *.pyc results.txt
+	cd problems;make clean
