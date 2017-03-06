@@ -10,7 +10,7 @@ if __name__ == "__main__":
                      problems.problem003,
                      problems.problem004,
                      problems.problem005]
-    for problemNO in [FUNCTION_LIST]:
+    for problemNO in FUNCTION_LIST:
         Process(target=problemNO, args=(ANSWERS,)).start()
         COUNT += 1
     FINALANSWERS = dict()
@@ -20,5 +20,5 @@ if __name__ == "__main__":
             PROBLEMNUMBER, ANSWER = ANSWERS.get()
             FINALANSWERS[PROBLEMNUMBER] = ANSWER
         else:
-            print I, FINALANSWERS[I]
+            print(I, FINALANSWERS[I])
             I += 1
