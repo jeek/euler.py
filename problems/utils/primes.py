@@ -1,3 +1,7 @@
+"""
+Functions related to primes.
+"""
+
 def prime_factors(i):
     """Yield prime factors of a number"""
     j = 2

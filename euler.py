@@ -5,13 +5,12 @@ import problems
 if __name__ == "__main__":
     ANSWERS = Queue()
     COUNT = 0
-    for problemNO in [
-        problems.problem001,
-        problems.problem002,
-        problems.problem003,
-        problems.problem004,
-        problems.problem005,
-        ]:
+    FUNCTION_LIST = [problems.problem001,
+                     problems.problem002,
+                     problems.problem003,
+                     problems.problem004,
+                     problems.problem005]
+    for problemNO in [FUNCTION_LIST]:
         Process(target=problemNO, args=(ANSWERS,)).start()
         COUNT += 1
     FINALANSWERS = dict()

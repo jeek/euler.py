@@ -1,3 +1,4 @@
+"""Import all helper functions."""
 from fibonacci import genfib
 from gcd import gcd, lcm
 from palindrome import is_palindrome

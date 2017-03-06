@@ -1,3 +1,7 @@
+"""
+Functions related to palindromic numbers
+"""
+
 def reverse_number(i):
     """Reverse a positive integer."""
     new_number = 0

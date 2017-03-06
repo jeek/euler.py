@@ -1,7 +1,11 @@
-def genfib(first_number, second_number):
+"""
+Functions relating to the Fibonacci sequence.
+"""
+
+def genfib(first_num, second_num):
     """Generate list of Fibonacci numbers"""
-    yield first_number
-    yield second_number
+    yield first_num
+    yield second_num
     while True:
-        first_number, second_number = second_number, first_number + second_number
-        yield second_number
+        first_num, second_num = second_num, first_num + second_num
+        yield second_num

@@ -1,9 +1,13 @@
-def gcd(a, b):
-    """Greatest common denominator."""
-    while b:
-        a, b = b, a % b
-    return a
+"""
+Functions relating to Greatest Common Denominator
+"""
 
-def lcm(a, b):
+def gcd(first_num, second_num):
+    """Greatest common denominator."""
+    while second_num:
+        first_num, second_num = second_num, first_num % second_num
+    return first_num
+
+def lcm(first_num, second_num):
     """Least common multiple."""
-    return a * b / gcd(a, b)
+    return first_num * second_num / gcd(first_num, second_num)
