@@ -8,7 +8,8 @@ numbers from 1 to 20?
 from multiprocessing import Process, Queue
 import unittest
 from time import time
-from utils.gcd import lcm
+from problems.utils.gcd import lcm
+
 
 def problem005(output, argument=20):
     """
@@ -16,7 +17,8 @@ def problem005(output, argument=20):
     """
     output.put((5, reduce(lcm, range(1, argument+1))))
 
-class TestProblem005(unittest.TestCase): #pylint: disable=R0904
+
+class TestProblem005(unittest.TestCase):
     """
     Test Problem #5.
     """

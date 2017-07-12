@@ -7,7 +7,8 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 from multiprocessing import Process, Queue
 import unittest
 from time import time
-from utils.palindrome import is_palindrome
+from problems.utils.palindrome import is_palindrome
+
 
 def problem004(output, argument=3):
     """
@@ -17,11 +18,12 @@ def problem004(output, argument=3):
     for second_number in xrange(10 ** (argument - 1), 10 ** argument):
         for first_number in xrange(10 ** (argument - 1), second_number + 1):
             if first_number * second_number > answer and \
-                is_palindrome(first_number * second_number):
+                   is_palindrome(first_number * second_number):
                 answer = first_number * second_number
     output.put((4, answer))
 
-class TestProblem004(unittest.TestCase): #pylint: disable=R0904
+
+class TestProblem004(unittest.TestCase):
     """
     Test Problem #4.
     """

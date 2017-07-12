@@ -11,7 +11,8 @@ from multiprocessing import Process, Queue
 from time import time
 import unittest
 from itertools import islice
-from utils.fibonacci import genfib
+from problems.utils.fibonacci import genfib
+
 
 def problem002(output, argument=4000000):
     """Solve Problem #2."""
@@ -23,7 +24,8 @@ def problem002(output, argument=4000000):
     terms = [i for i in terms if i % 2 == 0]
     output.put((2, sum(terms)))
 
-class TestProblem002(unittest.TestCase): #pylint: disable=R0904
+
+class TestProblem002(unittest.TestCase):
     """
     Test Problem #2.
     """

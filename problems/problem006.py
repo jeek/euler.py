@@ -15,14 +15,16 @@ from multiprocessing import Process, Queue
 import unittest
 from time import time
 
+
 def problem006(output, argument=100):
     """
     Solve Problem #6.
     """
-    output.put((6, sum(range(1, argument+1))**2 - sum([i ** 2 for i in \
-        range(1, argument+1)])))
+    output.put((6, sum(range(1, argument+1))**2 - sum([i ** 2 for i in
+               range(1, argument+1)])))
 
-class TestProblem006(unittest.TestCase): #pylint: disable=R0904
+
+class TestProblem006(unittest.TestCase):
     """
     Test Problem #6.
     """
