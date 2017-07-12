@@ -8,7 +8,7 @@ numbers from 1 to 20?
 from multiprocessing import Process, Queue
 import unittest
 from time import time
-from problems.utils.gcd import lcm
+from utils.gcd import lcm
 
 
 def problem005(output, argument=20):

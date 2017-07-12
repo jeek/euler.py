@@ -6,7 +6,7 @@ What is the largest prime factor of the number 600851475143 ?
 from multiprocessing import Process, Queue
 import unittest
 from time import time
-from problems.utils.primes import prime_factors
+from utils.primes import prime_factors
 
 
 def problem003(output, argument=600851475143):

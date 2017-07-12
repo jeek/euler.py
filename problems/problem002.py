@@ -11,7 +11,7 @@ from multiprocessing import Process, Queue
 from time import time
 import unittest
 from itertools import islice
-from problems.utils.fibonacci import genfib
+from utils.fibonacci import genfib
 
 
 def problem002(output, argument=4000000):

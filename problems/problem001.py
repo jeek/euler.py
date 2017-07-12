@@ -7,7 +7,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 from multiprocessing import Process, Queue
 from time import time
 import unittest
-from problems.utils import sumsteplist
+from utils import sumsteplist
 
 
 def problem001(output, argument=1000):
